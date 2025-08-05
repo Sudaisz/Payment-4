@@ -1,30 +1,37 @@
+<!-- products.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Products - Beyond Store</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       background-image: url('https://files.catbox.moe/4eog92.jpg');
       background-size: cover;
-      background-position: center;
+    }
+    .glow {
+      color: #fff;
+      text-shadow:
+        0 0 5px #00f7ff,
+        0 0 10px #00f7ff,
+        0 0 20px #00f7ff,
+        0 0 40px #00f7ff;
     }
   </style>
 </head>
-<body class="min-h-screen flex items-center justify-center">
-  <div class="bg-black bg-opacity-70 p-6 rounded-xl text-white text-center max-w-md w-full">
-    <h1 class="text-3xl text-yellow-300 font-bold mb-4">🛒 Products</h1>
-    <ul class="text-left space-y-2">
-      <li>🤖 Bot Files – ₦700</li>
-      <li>🛡️ Panel – ₦2500</li>
-      <li>🔓 Bot Access (REM) – ₦1000</li>
-      <li>👨‍💻 Admin Panel – ₦5000</li>
-      <li>📱 Telegram Account (1 left) – ₦7800</li>
-      <li>🌐 Website Files – ₦1300</li>
-      <li>🛠️ Custom Website – ₦2500</li>
-    </ul>
-    <a href="index.html" class="block mt-6 text-blue-400 underline">⬅️ Back</a>
-  </div>
+<body class="text-white flex flex-col items-center justify-center min-h-screen bg-black bg-opacity-80">
+  <h1 class="text-3xl font-bold mb-6 glow">Our Products</h1>
+  <ul class="space-y-3 text-lg text-center">
+    <li class="glow">🤖 Bot Files – ₦700</li>
+    <li class="glow">📋 Panel – ₦2500</li>
+    <li class="glow">🔐 Bot Access (REM) – ₦1000</li>
+    <li class="glow">🛠️ Admin Panel – ₦5000</li>
+    <li class="glow">👤 Telegram Account – ₦7800 (only one left)</li>
+    <li class="glow">🖥️ Website Files – ₦1300</li>
+    <li class="glow">🌐 Custom Website – ₦2500</li>
+  </ul>
+  <a href="index.html" class="mt-6 text-yellow-400 underline">⬅ Back</a>
 </body>
 </html>
